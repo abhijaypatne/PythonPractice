@@ -1,0 +1,20 @@
+Operations and Business Analyst
+ Boston   Full-time   G&A
+
+ We are looking for an experienced and self-motivated Operations and Business Analyst to join our Operations team.
+ Reporting directly to the VP of Operations, the Operations and Business Analyst will play a key role in designing 
+ and developing enterprise-wide reporting and analytics, and provide valuable insights on drivers of sales performance. 
+ This role will interface across all business units, including sales, marketing, finance, infrastructure and product to 
+ use our data to drive positive change through the organization.
+
+ZeroTurnaround is a software company that sells productivity tools to other software developers. 
+We have thousands of enterprise customers and a high-velocity sales team that adds hundreds more each month. 
+In addition to that, our marketing team drives hundreds of thousands of web visits and thousands of new leads each month. 
+The BA will use tools like Salesforce, Marketo, Mixpanel, Netsuite and Google Analytics to compile the data we have collected
+ from all of these potential customers to uncover trends and optimize our go-to-market strategy.
+
+The BA will be a master of their craft – providing insight into our business by letting the data tell the story. 
+We are looking for a strategic thinker who is passionate about data, 
+with a proven track record of assessing and improving business 
+performance, who would like to influence our processes to maximize productivity.
+
