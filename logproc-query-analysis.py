@@ -29,28 +29,38 @@ def get_data(source: str):
     print(json_data["stats"])
 
     results = json_data["results"]
+    print("source: " + source + "; number of results: " + str(len(results)))
 
     # Initialize the map
     result_map = defaultdict(list)
+    result_map2 = defaultdict()
     for result in results:
-        print(type(result))
         try:
             total_duration = result["payload"]["json"]["total_duration_millis"]
             query = result["payload"]["json"]["Query"]
             result_map[total_duration].append(query)
+            result_map2[total_duration] = query
         except KeyError:
             print("keyerror: " + str(result))
 
     sorted_map = dict(sorted(result_map.items(), key=lambda x: x[0], reverse=True))
+    sorted_map2 = dict(sorted(result_map2.items(), key=lambda x: x[0], reverse=True))
 
-    for key, value in sorted_map.items():
-        print(key, value)
+    # for key, value in sorted_map.items():
+    #     print(key, value)
 
     # Write the key-value pairs to a CSV file
-    with open("output.csv", mode="w", newline="") as file:
+    with open(source + "output.csv", mode="w", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(["total_duration_millis", "Query", "Source"])  # Write header row
         for key, value in sorted_map.items():
+            writer.writerow([key, value, source])
+
+    # Write the key-value pairs to a CSV file
+    with open(source + "output2.csv", mode="w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(["total_duration_millis", "Query", "Source"])  # Write header row
+        for key, value in sorted_map2.items():
             writer.writerow([key, value, source])
 
 
